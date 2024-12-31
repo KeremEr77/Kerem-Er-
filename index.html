@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautyBloom</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .flower-item {
+      position: relative;
+      text-align: center;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .flower-item h4 {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .flower-info {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #F5F5F5;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .flower-item:focus-within .flower-info,
+    .flower-item img:focus + .flower-info,
+    .flower-item h4:focus + .flower-info {
+      display: block;
+    }
+
+    .flower-item img {
+      cursor: pointer;
+      outline: none;
+    }
+
+    .flower-item img:focus,
+    .flower-item h4:focus {
+      outline: 2px solid #F5F5F5;
+      outline-offset: 4px;
+    }
+
+    .main-header {
+      background-color: #D8B7DD;
+      padding: 50px 0;
+    }
+
+    .logo {
+      font-size: 36px;
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    .nav-menu {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .nav-menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .hero-section {
+      background: url('your-hero-image.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 100px 0;
+      text-align: center;
+      color: rgb(125, 127, 125);
+    }
+
+    .hero-section h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 24px;
+    }
+
+    .contact-section {
+      background-color: #D8B7DD;
+      padding: 40px 0;
+    }
+
+    .contact-section .container {
+      text-align: center;
+    }
+
+    .contact-section h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .main-footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">BeautyBloom</h1>
+    </div>
+
+    <div class="container">
+      <nav class="nav-menu">
+        <a href="#new-year">Christmas</a>
+        <a href="#cut-flowers">Cut Flowers</a>
+        <a href="#potted-flowers">Potted Flowers</a>
+        <a href="#cactus">Cactuses</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <h2>Explore the Beauty of Nature</h2>
+      <p>BeautyBloom is a platform created for those who want to discover the delicate flowers of nature and select the perfect blooms for special occasions. Here, you can find the meaning of each flower, tips for caring for them, and the best flower varieties for special days like New Year's. Step into a world full of flowers that will captivate you with their beauty and help you give meaningful gifts to your loved ones!
+      </p>
+    </div>
+  </section>
+
+<section id="new-year" class="special-section">
+  <div class="container">
+    <h3>Special for Christmas: Coquina Flower</h3>
+    <div class="new-year-flex">
+      <div class="new-year-image">
+        <img src="kokina.jpg" alt="Kokina Çiçeği" width="300" height="200">
+      </div>
+      <div class="new-year-description">
+        <p>Coquina flower is an elegant plant known for its red fruits and green leaves, especially popular during Christmas and winter months. Coquina flower is often used in home decorations, wreaths, vases or as gifts.</p>
+        <p>The coquina flower is often associated with innovation, fertility and protective power. It is given as a gift at New Year's Eve to wish for a fruitful and happy New Year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="cut-flowers" class="flower-section">
+    <div class="container">
+      <h3>Cut Flowers</h3>
+      <p>Cut flowers are flowers that are generally used for short-term decoration and are collected and made into bouquets.</p>
+      <p>When it comes to birthdays, invitations or various special occasions, buying or sending cut flowers is one of the first things that comes to mind.</p>
+      <div class="flower-grid">
+        <div class="flower-item" tabindex="0">
+          <img src="gül.jpg" alt="Gül" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Rose</h4>
+          <div class="flower-info">One of the most popular flower types, the rose has many types and colors. Rose symbolizes love, passion and romance.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="lale.jpeg" alt="Lale" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Tulip</h4>
+          <div class="flower-info">Tulip is a bulbous plant and is famous for its colorful flowers that bloom especially at the end of winter and the beginning of spring. Tulip symbolizes elegance and the arrival of spring.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="karanfil.jpg" alt="Karanfil" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Carnation</h4>
+          <div class="flower-info">There are many growers of carnations and they can be found at all times of the year and carnations are mostly known for their intense scent. Carnations express feelings of love and admiration.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="potted-flowers" class="flower-section">
+    <div class="container">
+      <h3>Potted Flowers</h3>
+      <p>Potted flowers are easy-care and decorative plants that are often preferred to beautify interior spaces at home or in the office. Potted flowers can enliven living spaces and create an aesthetic atmosphere with a variety of shapes and colors.</p>
+      <div class="flower-grid">
+        <div class="flower-item" tabindex="0">
+          <img src="orkide.webp" alt="Orkide" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Orchid</h4>
+          <div class="flower-info">Orchid is a plant species known for its elegant and exotic flowers. If it does not like its habitat, it quickly sheds its leaves. It needs careful care.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="menekşe.webp" alt="Menekşe" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Violet</h4>
+          <div class="flower-info">Violet is a plant known for its colorful and small flowers and abundant leaf pupation. It is widely preferred in home decoration.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="bonsai agaci.webp" alt="Bonsai" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Bonsai Tree</h4>
+          <div class="flower-info">Bonsai is an art form originating from Japan and refers to trees grown in small sizes. This art is done using special care and shaping techniques in order to obtain miniature versions of trees found in nature. There are types such as Pine Bonsai, Maple Bonsai, Olive Bonsai.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="cactus" class="flower-section">
+    <div class="container">
+      <h3>Cactuses</h3>
+      <p>Cactuses are small, thorny plants that are mostly used in home and table decorations, and there are also thornless types. By storing water for long periods of time, they can survive in arid conditions.</p>
+      <div class="flower-grid">
+        <div class="flower-item" tabindex="0">
+          <img src="parodia.jpg" alt="Parodia" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Parodia</h4>
+          <div class="flower-info">Parodia is a type of cactus that is usually round in shape and has flowers of various colors. The most common flower colors are yellow, red or pink.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="tavşan kulağı.webp" alt="Tavşan Kulağı Kaktüsü" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Bunny Ears</h4>
+          <div class="flower-info">The rabbit ear cactus, which takes its name from its shape, is a small and thin spiny cactus species.</div>
+        </div>
+        <div class="flower-item" tabindex="0">
+          <img src="ökseotu.jpg" alt="Ökseotu Kaktüsü" width="300" height="200" tabindex="0">
+          <h4 tabindex="0">Mistletoe Cactus</h4>
+          <div class="flower-info">Mistletoe cactus, which is different from other cactuses, is a plant species that is widely used in home and business decoration with its thornless structure. Although it is confused with mistletoe, mistletoe cactus actually belongs to the cactus family.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h3>Contact Information</h3>
+      <p>BeautyBloom</p>
+      <p>E-mail: kerem.er@std.medipol.edu.tr</p>
+      <p>Instagram: BeautyBloom</p>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2024 BeautyBloom. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

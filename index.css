@@ -1,0 +1,239 @@
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5; 
+  color: #7D7F7D;
+}
+
+.main-header .logo, .hero-section h2, .flower-section h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.hero-section p, .flower-section p, .contact-section p, .main-footer p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400; 
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.main-header {
+  background-color: #D8B7DD; 
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem; 
+}
+
+.main-header .logo {
+  font-size: 4rem; 
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem; 
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem; 
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  background: linear-gradient(to bottom, #D8B7DD, #F5F5F5); 
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.special-section {
+  background-color: #efefef; 
+  padding: 2rem 0;
+}
+
+.new-year-flex {
+  display: flex; 
+  align-items: center; 
+  gap: 2rem; 
+}
+
+.new-year-image img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+.new-year-description {
+  text-align: left; 
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+.flower-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.flower-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.flower-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.flower-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flower-item {
+  background-color: rgb(229, 209, 240);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.flower-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.flower-item h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.flower-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.contact-section {
+  background-color: #D8B7DD !important; 
+  color: #F5F5F5;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #F5F5F5;
+}
+
+.contact-section p {
+  color: #F0F0F0 !important;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+
+.main-footer {
+  background-color: #D8B7DD; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 768px) {
+  
+  .main-header .logo {
+    font-size: 2.5rem; 
+    margin-right: 0;
+  }
+
+  
+  .nav-menu {
+    display: block;
+    text-align: center;
+    gap: 1rem; 
+  }
+
+  .nav-menu a {
+    font-size: 1rem; 
+  }
+
+  
+  .hero-section {
+    padding: 2rem 1rem; 
+  }
+
+  .hero-section h2 {
+    font-size: 2rem; 
+  }
+
+  .hero-section p {
+    font-size: 1rem; 
+  }
+
+  
+  .flower-grid {
+    flex-direction: column;
+    gap: 1.5rem; 
+  }
+
+  .flower-item {
+    width: 100%; 
+  }
+
+  .new-year-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+  }
+
+  .new-year-image img {
+    width: 80%; 
+    max-width: 250px;
+  }
+  
+  .contact-section {
+    padding: 1.5rem 0; 
+  }
+
+  .main-footer {
+    padding: 1rem 0; 
+  }
+}
